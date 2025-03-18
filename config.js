@@ -34,7 +34,7 @@ config.advancedcmdperm = [PermissionsBitField.Flags.Administrator, PermissionsBi
 
 // discord id of the bot owner
 // make sure to change this to your discord id if you're hosting this bot yourself
-config.owner = "161248916384251904";
+config.owner = "516551577746669578";
 // base permission level that owner gets
 config.ownerperm = 6969;
 // base permission level that someone who added the bot will get
@@ -45,7 +45,7 @@ config.blacklistedguild = ["265757905435885568"];
 config.blacklisteduser = ["264104948072054785"];
 
 // the application id of the bot
-config.clientId = "597932863597576204";
+config.clientId = "1350153034897948702";
 // the id of the guild for testing guild commands
 config.guildId = "171259045557043202";
 

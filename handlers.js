@@ -484,7 +484,7 @@ function pingPoringWorld(querystring) {
     if(querystring === undefined) querystring = '';
     querystring.replace('+', '%2B');
     return new Promise(function(resolve, reject) {
-        https.get(`https://poring.world/api/search?order=popularity&inStock=1&q=${querystring}`, (resp) => {
+        https.get(`https://poring.world/api/search?server=classic&order=popularity&inStock=1&q=${querystring}`, (resp) => {
             let data = '';
 
             // A chunk of data has been recieved.
@@ -513,7 +513,7 @@ function pingPoringWorld(querystring) {
 // quick price check for clean/unmodified equip
 function pcPoringWorld(itemName) {
     return new Promise(function (resolve, reject) {
-        https.get('https://poring.world/api/search?order=price&rarity=&inStock=&modified=0&category=&endCategory=&q=' + itemName, (resp) => {
+        https.get('https://poring.world/api/search?server=classic&order=price&rarity=&inStock=&modified=0&category=&endCategory=&q=' + itemName, (resp) => {
             let data = '';
 
             // A chunk of data has been recieved.
